@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Petshop Amigo Fiel - Home</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand" href="index.html">🐾 Amigo Fiel</a>
+            <a class="navbar-brand fw-bold" href="index.html">🐾 Amigo Fiel</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -19,7 +23,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
-                    <li class="nav-item"><a class="nav-link btn btn-warning text-dark ms-2" href="cadastro.html">Agendar Agora</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-warning text-dark ms-2 px-4 fw-bold" href="cadastro.html">Agendar Agora</a></li>
                 </ul>
             </div>
         </div>
@@ -28,15 +32,15 @@
     <div id="carouselPetshop" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://placehold.co/1200x400/orange/white?text=Bem-vindo+ao+Amigo+Fiel" class="d-block w-100" alt="Cachorro feliz após o banho">
-                <div class="carousel-caption d-none d-md-block">
+                <img src="https://placehold.co/1200x500/orange/white?text=Bem-vindo+ao+Amigo+Fiel" class="d-block w-100" alt="Cachorro feliz">
+                <div class="carousel-caption d-none d-md-block bg-dark-transparent rounded">
                     <h5>Cuidado e Carinho</h5>
                     <p>O melhor tratamento para o seu melhor amigo.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="https://placehold.co/1200x400/blue/white?text=Banho+e+Tosa+Especializados" class="d-block w-100" alt="Gato recebendo carinho">
-                <div class="carousel-caption d-none d-md-block">
+                <img src="https://placehold.co/1200x500/2980b9/white?text=Banho+e+Tosa+Especializados" class="d-block w-100" alt="Gato recebendo carinho">
+                <div class="carousel-caption d-none d-md-block bg-dark-transparent rounded">
                     <h5>Profissionais Qualificados</h5>
                     <p>Temos especialistas em todas as raças.</p>
                 </div>
@@ -53,31 +57,38 @@
     </div>
 
     <section id="servicos" class="container my-5">
-        <h2 class="text-center mb-4">Nossos Serviços</h2>
-        <div class="row">
-            <div class="col-md-6 mb-3">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">🚿 Banho e Tosa</h5>
-                        <p class="card-text">Utilizamos produtos hipoalergênicos e toalhas esterilizadas.</p>
-                        <p class="text-primary fw-bold">A partir de R$ 50,00</p>
+        <h2 class="text-center mb-5 text-primary fw-bold">Nossos Serviços</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card h-100 shadow border-0 card-servico">
+                    <div class="card-body text-center p-4">
+                        <div class="display-4 text-primary mb-3">🚿</div>
+                        <h5 class="card-title fw-bold">Banho e Tosa</h5>
+                        <p class="card-text text-muted">Utilizamos produtos hipoalergênicos e toalhas esterilizadas para a segurança do seu pet.</p>
+                        <hr>
+                        <p class="text-primary fw-bold fs-5">A partir de R$ 50,00</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 mb-3">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">🚕 Tele-busca</h5>
-                        <p class="card-text">Buscamos e levamos seu pet com total segurança e conforto.</p>
-                        <p class="text-primary fw-bold">Taxa fixa de R$ 15,00</p>
+            <div class="col-md-6">
+                <div class="card h-100 shadow border-0 card-servico">
+                    <div class="card-body text-center p-4">
+                        <div class="display-4 text-warning mb-3">🚕</div>
+                        <h5 class="card-title fw-bold">Tele-busca</h5>
+                        <p class="card-text text-muted">Buscamos e levamos seu pet com total segurança e conforto em veículos climatizados.</p>
+                        <hr>
+                        <p class="text-primary fw-bold fs-5">Taxa fixa de R$ 15,00</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 Petshop Amigo Fiel - Desenvolvido por André Pereira</p>
+    <footer class="bg-dark text-white text-center py-4 mt-auto">
+        <div class="container">
+            <p class="mb-1">&copy; 2025 Petshop Amigo Fiel</p>
+            <small class="text-secondary">Desenvolvido por André Pereira</small>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

@@ -1,28 +1,70 @@
-/* css/style.css */
+/* Definição da fonte global */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f9fa;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa; /* Um cinza muito leve para o fundo */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
+/* Ajustes na Navbar */
 .navbar-brand {
-    font-weight: bold;
     font-size: 1.5rem;
+    letter-spacing: 1px;
 }
 
+.nav-link {
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffc107 !important; /* Amarelo no hover */
+}
+
+/* Ajustes do Carrossel (Hero Section) */
 .carousel-item img {
-    height: 400px;
-    object-fit: cover; /* Garante que a imagem não distorça */
+    height: 500px; /* Altura fixa para o banner */
+    object-fit: cover; /* Garante que a imagem preencha sem distorcer */
 }
 
-.card {
-    transition: transform 0.3s;
+/* Fundo escuro transparente para o texto do carrossel ficar legível */
+.bg-dark-transparent {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    display: inline-block;
+}
+
+/* Estilização dos Cards de Serviço */
+.card-servico {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px; /* Bordas mais arredondadas */
+    background: #fff;
+}
+
+/* Efeito ao passar o mouse sobre o card */
+.card-servico:hover {
+    transform: translateY(-10px); /* O card "flutua" para cima */
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+}
+
+.card-title {
+    color: #333;
+}
+
+/* Botão de Agendar (Destaque) */
+.btn-warning {
+    background-color: #ffc107;
     border: none;
+    transition: transform 0.2s;
 }
 
-.card:hover {
-    transform: scale(1.03); /* Efeito de zoom suave ao passar o mouse */
+.btn-warning:hover {
+    background-color: #e0a800;
+    transform: scale(1.05); /* Leve aumento de tamanho */
 }
 
+/* Ajuste do Footer */
 footer {
-    margin-top: auto;
+    margin-top: auto; /* Garante que o footer fique na base mesmo com pouco conteúdo */
 }
