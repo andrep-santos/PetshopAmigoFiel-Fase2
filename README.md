@@ -32,4 +32,5 @@ Atendendo aos requisitos da Fase 2, foram adicionados:
 * **Bootstrap 5.3:** Framework para layout responsivo e componentes visuais.
 * **JavaScript (ES6):** Lógica de validação e manipulação do DOM (`js/script.js`).
 
-## 📂 Estrutura de Arquivos
+## 📎 Link do site:
+*https://andrep-santos.github.io/PetshopAmigoFiel-Fase2/
