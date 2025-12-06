@@ -1,0 +1,28 @@
+/* css/style.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.carousel-item img {
+    height: 400px;
+    object-fit: cover; /* Garante que a imagem não distorça */
+}
+
+.card {
+    transition: transform 0.3s;
+    border: none;
+}
+
+.card:hover {
+    transform: scale(1.03); /* Efeito de zoom suave ao passar o mouse */
+}
+
+footer {
+    margin-top: auto;
+}
