@@ -1,7 +1,7 @@
 /* --- Definições Globais --- */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f0f8ff; /* Azul Alice muito suave para o fundo, combina com petshop */
+    background-color: #f4faff; /* Azul Alice muito suave para o fundo, combina com petshop */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -19,20 +19,20 @@ body {
 }
 
 .nav-link:hover, .nav-link.active {
-    color: #000000 !important; /* Amarelo no hover e no item ativo */
+    color: #1f1f1f !important; /* Amarelo no hover e no item ativo */
 }
 
 /* Botão de Agendar na Navbar */
 .navbar .btn-warning {
     font-weight: 600;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 
 /* --- Ajustes do Carrossel (Hero Section) --- */
 .banner-img {
     /* Define uma altura fixa para os banners e garante que não distorçam */
-    height: 500px; /* Aumentei um pouco para 500px conforme seu pedido anterior */
+    height: 400px; /* Aumentei um pouco para 500px conforme seu pedido anterior */
     object-fit: cover;
     object-position: center;
 }
@@ -42,8 +42,8 @@ body {
 /* Esta classe substitui a antiga .card-servico para ser usada em tudo */
 .card-hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 15px; /* Bordas arredondadas modernas */
-    background: #fff;
+    border-radius: 19px; /* Bordas arredondadas modernas */
+    background: #f7f7f7;
     overflow: hidden; /* Garante que a imagem respeite a borda arredondada */
 }
 
