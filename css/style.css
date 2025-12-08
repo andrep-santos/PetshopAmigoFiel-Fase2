@@ -1,13 +1,13 @@
-/* Definição da fonte global */
+/* --- Definições Globais --- */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f8f9fa; /* Um cinza muito leve para o fundo */
+    background-color: #f0f8ff; /* Azul Alice muito suave para o fundo, combina com petshop */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-/* Ajustes na Navbar */
+/* --- Ajustes na Navbar --- */
 .navbar-brand {
     font-size: 1.5rem;
     letter-spacing: 1px;
@@ -18,53 +18,101 @@ body {
     transition: all 0.3s ease;
 }
 
-.nav-link:hover {
-    color: #ffc107 !important; /* Amarelo no hover */
+.nav-link:hover, .nav-link.active {
+    color: #000000 !important; /* Amarelo no hover e no item ativo */
 }
 
-/* Ajustes do Carrossel (Hero Section) */
-.carousel-item img {
-    height: 500px; /* Altura fixa para o banner */
-    object-fit: cover; /* Garante que a imagem preencha sem distorcer */
+/* Botão de Agendar na Navbar */
+.navbar .btn-warning {
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-/* Fundo escuro transparente para o texto do carrossel ficar legível */
-.bg-dark-transparent {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 15px;
-    display: inline-block;
+
+/* --- Ajustes do Carrossel (Hero Section) --- */
+.banner-img {
+    /* Define uma altura fixa para os banners e garante que não distorçam */
+    height: 500px; /* Aumentei um pouco para 500px conforme seu pedido anterior */
+    object-fit: cover;
+    object-position: center;
 }
 
-/* Estilização dos Cards de Serviço */
-.card-servico {
+
+/* --- Estilização Geral dos Cards (Serviços e Produtos) --- */
+/* Esta classe substitui a antiga .card-servico para ser usada em tudo */
+.card-hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 15px; /* Bordas mais arredondadas */
+    border-radius: 15px; /* Bordas arredondadas modernas */
     background: #fff;
+    overflow: hidden; /* Garante que a imagem respeite a borda arredondada */
 }
 
 /* Efeito ao passar o mouse sobre o card */
-.card-servico:hover {
-    transform: translateY(-10px); /* O card "flutua" para cima */
-    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+.card-hover:hover {
+    transform: translateY(-8px); /* O card "flutua" suavemente */
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.12)!important;
 }
 
 .card-title {
     color: #333;
 }
 
-/* Botão de Agendar (Destaque) */
+/* --- Estilos Específicos para Cards de Produtos --- */
+.card-img-product {
+    /* Garante que todas as imagens de produto tenham a mesma altura */
+    height: 220px;
+    object-fit: contain; /* 'contain' mostra a imagem inteira, 'cover' corta para preencher */
+    padding: 1rem; /* Um pouco de respiro para a imagem dentro do card */
+    background-color: #fff;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* Garante que o corpo do card preencha o espaço e empurre o botão para baixo */
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* --- Botões --- */
 .btn-warning {
     background-color: #ffc107;
     border: none;
-    transition: transform 0.2s;
+    transition: all 0.2s ease-in-out;
 }
 
 .btn-warning:hover {
     background-color: #e0a800;
-    transform: scale(1.05); /* Leve aumento de tamanho */
+    
+    transform: scale(1.05);
 }
 
-/* Ajuste do Footer */
+/* Botões "Ver Mais" nos produtos */
+.btn-outline-primary {
+    border-width: 2px;
+    font-weight: 600;
+}
+
+
+/* --- Ajustes de Seção --- */
+section {
+    /* Adiciona um espaçamento interno superior para compensar o menu fixo ao clicar nos links */
+    scroll-margin-top: 80px;
+}
+
+.text-primary {
+    /* Um azul um pouco mais vibrante que o padrão do Bootstrap */
+    color: #0d6efd !important;
+}
+
+
+/* --- Footer --- */
 footer {
-    margin-top: auto; /* Garante que o footer fique na base mesmo com pouco conteúdo */
+    margin-top: auto;
+    background-color: #212529; /* Dark padrão */
+}
+
+footer a:hover {
+    color: #ffc107 !important; /* Links do footer ficam amarelos no hover */
+    text-decoration: underline !important;
 }

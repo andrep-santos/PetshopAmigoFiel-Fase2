@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
         } else if (horaAtual < 18) {
             texto = "Boa tarde! Que tal deixar seu pet cheiroso hoje?";
         } else {
-            texto = "Boa noite! Agende agora para amanhã.";
+            texto = "Boa noite! Agende agora para amanhã, que tal?";
         }
 
         elementoSaudacao.innerText = texto;
